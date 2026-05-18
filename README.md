@@ -1,70 +1,211 @@
-# Getting Started with Create React App
+# WebInsight
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+AI-powered feedback and issue management platform built using the MERN stack.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Overview
 
-### `npm start`
+WebInsight is a full-stack web application that helps users manage projects, submit feedback, track issues, and gain AI-powered insights. The platform provides authentication, project management, issue tracking, review systems, and AI analysis features in a modern and responsive interface.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+### 🔐 Authentication System
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* User Registration & Login
+* JWT-based Authentication
+* Protected Routes
+* Secure User Sessions
 
-### `npm run build`
+### 📊 Dashboard
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Centralized Project Dashboard
+* Project Overview
+* Responsive Sidebar Navigation
+* Clean and Modern UI
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📝 Project Management
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Create Projects
+* Manage Project Data
+* Organize User Feedback
+* Track Project Issues
 
-### `npm run eject`
+### 🐞 Issue Tracking
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Report Issues
+* Manage Issue Status
+* Issue Categorization
+* View Project-wise Issues
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ⭐ Feedback & Reviews
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Submit Feedback
+* User Reviews System
+* Store and Manage Responses
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 🤖 AI Insights
 
-## Learn More
+* AI-powered analysis using Groq API
+* Smart insights generation
+* Automated feedback understanding
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🎨 Frontend Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Responsive Design
+* Modern UI using React
+* Tailwind CSS Styling
+* Smooth Navigation Experience
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🛠️ Tech Stack
 
-### Analyzing the Bundle Size
+### Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* React.js
+* React Router DOM
+* Tailwind CSS
+* Axios
 
-### Making a Progressive Web App
+### Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT Authentication
 
-### Advanced Configuration
+### AI Integration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* Groq API
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📂 Project Structure
 
-### `npm run build` fails to minify
+```bash
+WEBINSIGHT/
+│
+├── backend/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── server.js
+│   └── package.json
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── context/
+│   ├── pages/
+│   ├── services/
+│   ├── App.js
+│   └── index.js
+│
+├── package.json
+├── tailwind.config.js
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/DivyaTak04/webInsight.git
+cd webInsight
+```
+
+---
+
+### 2️⃣ Install Frontend Dependencies
+
+```bash
+npm install
+```
+
+---
+
+### 3️⃣ Install Backend Dependencies
+
+```bash
+cd backend
+npm install
+```
+
+---
+
+### 4️⃣ Setup Environment Variables
+
+Create a `.env` file inside the `backend` folder.
+
+Example:
+
+```env
+PORT=5000
+MONGODB_URI=your_mongodb_uri
+JWT_SECRET=your_jwt_secret
+JWT_EXPIRE=7d
+GROQ_API_KEY=your_groq_api_key
+NODE_ENV=development
+```
+
+---
+
+### 5️⃣ Run Backend Server
+
+```bash
+cd backend
+npm start
+```
+
+---
+
+### 6️⃣ Run Frontend
+
+Open another terminal:
+
+```bash
+npm start
+```
+
+---
+
+## 📸 Screenshots
+
+* Landing Page
+* Dashboard
+* AI Insights Page
+* Issues Management
+* Authentication Pages
+
+---
+
+## 🔮 Future Enhancements
+
+* Real-time Notifications
+* Dark Mode
+* Team Collaboration Features
+* Advanced AI Analytics
+* File Upload Support
+* Deployment & Cloud Hosting
+* Email Notifications
+
+---
+
+## 👩‍💻 Author
+
+### Divya Tak
+
+MCA Student | Full Stack Web Developer
+
+---
+
+## 📄 License
+
+This project is created for learning and educational purposes.
